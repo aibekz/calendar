@@ -69,7 +69,7 @@ export default function YearSquares(props: YearSquaresProps) {
         {/* Header */}
         <div className="mb-6 text-center">
           <div>
-            <span className="text-lg sm:text-xl font-semibold tracking-tight">
+            <span className="sm:text-lg font-semibold tracking-tight">
               Today
             </span>{" "}
             <span className="text-lg sm:text-xl font-semibold tracking-tight">
@@ -77,31 +77,6 @@ export default function YearSquares(props: YearSquaresProps) {
               {mounted && todayIndex != null ? nth(todayIndex) : ""} day of{" "}
               {year}.
             </span>
-          </div>
-          {/* Today + live time row */}
-          <div className="mt-3 w-full flex justify-center">
-            <time
-              dateTime={
-                mounted && nowLocal ? nowLocal.toISOString() : undefined
-              }
-              aria-live="polite"
-              className="inline-flex items-center justify-center px-3 py-1 rounded-md bg-neutral-800/60 text-neutral-100 text-sm font-mono shadow-sm ring-1 ring-white/6"
-              title={
-                mounted && nowLocal ? nowLocal.toLocaleString() : undefined
-              }
-            >
-              {mounted && nowLocal
-                ? nowLocal.toLocaleString(undefined, {
-                    weekday: "short",
-                    month: "short",
-                    day: "numeric",
-                    year: "numeric",
-                    hour: "numeric",
-                    minute: "2-digit",
-                    second: "2-digit",
-                  })
-                : "Loading time..."}
-            </time>
           </div>
           {/* Stats grid */}
           <div className="mt-4 w-full grid grid-cols-3 gap-3 items-center text-sm">
@@ -125,16 +100,6 @@ export default function YearSquares(props: YearSquaresProps) {
               </span>
               <span className="text-xs text-neutral-400">days left</span>
             </div>
-          </div>
-
-          {/* Progress bar */}
-          <div className="mt-4 h-2 w-full rounded-full bg-white/10 overflow-hidden">
-            <div
-              className="h-full rounded-full bg-neutral-100 shadow-[0_0_12px_rgba(255,255,255,0.06)]"
-              style={{
-                width: mounted && progress != null ? `${progress}%` : `0%`,
-              }}
-            />
           </div>
         </div>
         {/* Grid of days */}
