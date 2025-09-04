@@ -1,6 +1,5 @@
-<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1000" height="1000" fill="black"/>
-<path d="M397.7 250L222.7 749.8H138L313 250H397.7Z" fill="white"/>
-<path d="M489.969 250L664.969 749.8H580.269L405.269 250H489.969Z" fill="white"/>
-<path d="M687.938 250L862.938 749.8H778.237L603.237 250H687.938Z" fill="white"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="SP favicon">
+   <rect width="100%" height="100%" fill="transparent"/>
+   <text x="50%" y="50%" fill="#00AA00" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-weight="700" font-size="36" text-anchor="middle" dominant-baseline="central">SP</text>
 </svg>
