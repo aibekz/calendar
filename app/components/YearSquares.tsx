@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { YearSquaresProps } from "../../data/types";
 import useYearProgress from "../../hooks/useYearProgress";
-import { nth } from "../../lib/utils";
 import LegendSwatch from "./LegendSwatch";
 
 export default function YearSquares(props: YearSquaresProps) {
@@ -62,29 +61,14 @@ export default function YearSquares(props: YearSquaresProps) {
       >
         {/* App name */}
         <div className="w-full mb-4 flex items-center justify-center">
-          <div className="inline-flex items-center gap-3">
-            <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-white/10 text-neutral-100 font-semibold">
-              SC
-            </span>
-            <span className="text-sm md:text-base font-semibold tracking-tight">
-              Simpli Calendar
-            </span>
-          </div>
+          <span className="text-2xl sm:text-3xl font-semibold tracking-tight">
+            Simpli Calendar
+          </span>
         </div>
         {/* Header */}
         <div className="mb-6 text-center">
-          <div>
-            <span className="text-2xl md:text-3xl font-semibold tracking-tight">
-              Today
-            </span>{" "}
-            <span className="md:text-3xl font-semibold tracking-tight">
-              is the {mounted && todayIndex != null ? todayIndex : "--"}
-              {mounted && todayIndex != null ? nth(todayIndex) : ""} day of{" "}
-              {year}.
-            </span>
-          </div>
           {/* Today + live time row */}
-          <div className="mt-3 w-full flex justify-center">
+          <div className="w-full flex justify-center">
             <time
               dateTime={
                 mounted && nowLocal ? nowLocal.toISOString() : undefined
