@@ -62,14 +62,9 @@ export default function YearSquares(props: YearSquaresProps) {
       >
         {/* App name */}
         <div className="w-full mb-4 flex items-center justify-center">
-          <div className="inline-flex items-center gap-3">
-            <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-white/10 text-neutral-100 font-semibold">
-              SC
-            </span>
-            <span className="text-sm md:text-base font-semibold tracking-tight">
-              Simpli Calendar
-            </span>
-          </div>
+          <span className="text-lg md:text-xl font-semibold tracking-tight">
+            Simpli Calendar
+          </span>
         </div>
         {/* Header */}
         <div className="mb-6 text-center">
