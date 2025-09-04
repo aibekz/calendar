@@ -69,10 +69,10 @@ export default function YearSquares(props: YearSquaresProps) {
         {/* Header */}
         <div className="mb-6 text-center">
           <div>
-            <span className="text-2xl md:text-3xl font-semibold tracking-tight">
+            <span className="text-lg sm:text-xl font-semibold tracking-tight">
               Today
             </span>{" "}
-            <span className="md:text-3xl font-semibold tracking-tight">
+            <span className="text-lg sm:text-xl font-semibold tracking-tight">
               is the {mounted && todayIndex != null ? todayIndex : "--"}
               {mounted && todayIndex != null ? nth(todayIndex) : ""} day of{" "}
               {year}.
