@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { YearSquaresProps } from "../../data/types";
 import useYearProgress from "../../hooks/useYearProgress";
-import { nth } from "../../lib/utils";
 import LegendSwatch from "./LegendSwatch";
+import { nth } from "../../lib/utils";
 
 export default function YearSquares(props: YearSquaresProps) {
   const {
